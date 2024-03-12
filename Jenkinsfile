@@ -1,11 +1,7 @@
 pipeline {
   agent any
   stages{
-    stage ("Cloner github"){
-      steps{
-        bat "git clone https://github.com/WalkerStanislas/Test-de-Mot-de-Passe.git"
-      }
-    }
+  
    
     stage("Build: compiler le code source java"){
       steps{
