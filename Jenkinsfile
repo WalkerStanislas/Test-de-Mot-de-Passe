@@ -10,7 +10,7 @@ pipeline {
     }
     stage ("Compilation et exécution du code de test"){
       steps{
-        bat "javac -cp junit.jar:. Test_.java"
+        bat "javac -cp junit.jar:. src\Test_.java"
         bat "java -cp junit.jar:. org.junit.runner.JUnitCore Test_"
       }
     }
