@@ -11,6 +11,7 @@ pipeline {
     stage ("Compilation et exécution du code de test"){
       steps{
         bat 'javac -cp junit.jar;. "C:\\Users\\HP\\IdeaProjects\\TEST Logiciel\\src\\Test_.java"'
+        bat 'javac -cp junit.jar;. "C:\\Users\\HP\\IdeaProjects\\TEST Logiciel\\src\\PasseTest.java"'
         bat "java -cp junit.jar:. org.junit.runner.JUnitCore Test_"
       }
     }
