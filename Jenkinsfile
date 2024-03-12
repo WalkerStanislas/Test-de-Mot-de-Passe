@@ -7,7 +7,9 @@ pipeline {
       }
     }
     stage("Build: compiler le code source java"){
-      bat "javac -sourcepath src -d build/classes src/*.java"
+      steps{
+        bat "javac -sourcepath src -d build/classes src/*.java"
+      }
     }
     stage ("Compilation et exécution du code de test"){
       steps{
