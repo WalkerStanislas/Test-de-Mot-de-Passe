@@ -1,5 +1,8 @@
 public class PasseTest {
-    public Boolean PasseTest(String Passe){
+
+
+
+    public Boolean Passe(String Passe){
         int f0 = 0;
         int f1 = 0;
         int f2 = 0;
@@ -41,6 +44,12 @@ public class PasseTest {
     }
 
     public static void main(String[] args) {
+        PasseTest passeTest = new PasseTest();
+        passeTest.Passe("Walker1234@");
 
     }
+
+
+
+
 }
